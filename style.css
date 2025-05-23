@@ -1,0 +1,115 @@
+/* Base Style */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(-45deg, #ffd6e0, #c1f7f5, #f5f5c1);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Header */
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ec27a1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 10px 0;
+    color: #cb1554;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    margin: 30px 0;
+    justify-content: center;
+}
+
+.gallery a {
+    display: block;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 10 14px 18px rgba(45, 7, 7, 0.1);
+    transition: all 0.3s;
+}
+
+.gallery a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Social Links */
+.social {
+    margin: 20px 0;
+}
+
+.social a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background: #ff6b9e;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.social a:hover {
+    background: #ff4785;
+    transform: scale(1.05);
+}
+
+/* Removed invalid selector and duplicate rules. 
+   The styles below are already applied to .social a above. 
+   If you want to target a specific element, use a valid selector and wrap properties in braces. */
+
+
+
+/* Message */
+.message {
+    margin-top: 40px;
+    font-style: italic;
+    color: #666; }
+    
